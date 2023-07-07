@@ -1,0 +1,46 @@
+header {
+    background-color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: violet;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+
+}
+
+.nav-menu-link:hover {
+    background-color: #024070;
+    border-radius: 10px;
+}
+
+
+.pie {
+    text-align: center;
+    background-color: skyblue;
+    color: white;
+}
+
+

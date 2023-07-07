@@ -2,28 +2,96 @@
 
 <html>
     <head>
-        <title>Pateleria</title>
+        <title>Contacto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/contacto y pedidos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img src="logo.png" alt="Logo">
-                </a>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Pedidos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+        <header class="header">
+            <nav class="nav">
+                <img src="../Imagenes/dulces del cielo.png" alt="Logo de pasteleria" width="80" />
+                <a class="nav-link logo" href="index.html">
+                    <p>Pastelería y Repostería</p>
+                    <p>Por Luana Marchena</p></a> 
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="index.html">Inicio</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="acerca de.html">Acerca de</a></li>     
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="pedidos.html">Pedidos</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="contacto.html">Contacto</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="index.html">Instagram</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="index.html">Facebook</a></li>
                 </ul>
-                <a href="#" class="social-media">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                </a>
             </nav>
-        </header>    
+        </header>
+        <main class="violeta">
+            <section class="contacto">
+                <div class="container">
+                    <h2>CONTÁCTAME</h2>
+                    <p>Nuestro horario de Atención:</p> 
+                    <p>Lunes a viernes: 9:00 am a 5:00 pm 
+                    <p>Sábado: 9:00 am a 1:00 pm</p>
+                    <p>Domingos: Según disponibilidad en agenda</p>
+                    <p>Puedes hacer tus pedidos por estos medios</p>
+                    <p>Numero de teléfono | Pedir Online aquí</p>
+                    <p>+50672564345</p>
+                </div>
+            </section>
+            <form class="form" action="procesar_formulario.php" method="POST">
+                <h3>Información Personal</h3>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div>
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <h3>Detalles del Pedido</h3>
+                <div>
+                    <label for="sabor">Sabor:</label>
+                    <input type="text" id="sabor" name="sabor" required>
+                </div>
+                <div>
+                    <label for="porciones">Porciones:</label>
+                    <input type="number" id="porciones" name="porciones" required>
+                </div>
+                <div>
+                    <label for="forma_pago">Forma de Pago:</label>
+                    <select id="forma_pago" name="forma_pago" required>
+                        <option value="">Seleccionar</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="colores_preferencia">Colores de Preferencia:</label>
+                    <input type="text" id="colores_preferencia" name="colores_preferencia" required>
+                </div>
+                <div>
+                    <label for="descripcion">Descripción Detallada:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p class="pie"> Terminos y Condiciones | Política de Privacidad</p>
+        </footer>
     </body>
 </html>
